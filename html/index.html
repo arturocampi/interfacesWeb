@@ -11,18 +11,18 @@
 
 <body>
     <!--LOGO, MENU PRINCIPAL, TITULO, MENU SECUNDARIO, IDIOMA-->
-    <header id="logo" class="ma">
+    <header id="logo" >
         <img src="../img/drumbeat_logo.png">
     </header>
-    <nav id="mainMenu" class="ma">
+    <nav id="mainMenu">
         <div id="firstMenu">
-            <ul id="logIn">
+            <ul class="microsoftSans padR" id="logIn">
                 <li style="padding-right: 25px;" ;><a href="https://foundation.mozilla.org/es/">log in</a></li>
                 <li><a href="https://foundation.mozilla.org/es/">sign up</a></li>
             </ul>
         </div>
         <div id="secondMenu">
-            <ul>
+            <ul class="microsoftSans padR">
                 <li><a href="https://foundation.mozilla.org/es/">about</a></li>
                 <li><a href="https://foundation.mozilla.org/es/">projects</a></li>
                 <li><a href="https://foundation.mozilla.org/es/">people</a></li>
@@ -31,11 +31,11 @@
             </ul>
         </div>
     </nav>
-    <div id="subtitle" class="ma">
-        <h1>Drumbet Learning, Freedom and the Web Festival</h1>
+    <div id="subtitle">
+        <h1 class="PTSans">Drumbet Learning, Freedom and the Web Festival</h1>
     </div>
-    <div id="secondNav" class="ma">
-        <ul>
+    <div id="secondNav">
+        <ul class="PTSans">
             <li><a href="https://foundation.mozilla.org/es/">Festival</a></li>
             <li style="background-color: #e8e8e8
             ;" ;><a style="color: black;" ; href="https://foundation.mozilla.org/es/">Program</a></li>
@@ -47,18 +47,18 @@
             <img id="navSelectArrow" src="../img/tabs-arrow2.png">
         </ul>
     </div>
-    <div id="language" class="ma">
-        <span>language:</span>
-        <ul>
-            <li id="enLAN"><a href="https://foundation.mozilla.org/es/">en</a></li>
-            <li id="caLAN"><a href="https://foundation.mozilla.org/es/">ca</a></li>
-            <li id="esLAN"><a href="https://foundation.mozilla.org/es/">es</a></li>
+    <div id="language">
+        <span class="PTSans">language:</span>
+        <ul class="PTSans disInline">
+            <li class="disInline" id="enLAN"><a href="https://foundation.mozilla.org/es/">en</a></li>
+            <li class="disInline" id="caLAN"><a href="https://foundation.mozilla.org/es/">ca</a></li>
+            <li class="disInline" id="esLAN"><a href="https://foundation.mozilla.org/es/">es</a></li>
         </ul>
     </div>
     <!--PRIMER PÁRRAFO-->
-    <div id="programSection" class="ma">
+    <div id="programSection">
         <header>
-            <h1>Program</h1>
+            <h1 class="microsoftSans">Program</h1>
         </header>
         <section>
             <article><strong>Imagine a folk festival with many different tents — </strong> tents for all different sorts
@@ -71,13 +71,13 @@
         </section>
         <img src="../img/program.png">
     </div>
-    <div id="register" class="asideWidth ma">
+    <div id="register" class="asideWidth">
         <div id="registerIcon">
-            <h1>Register</h1>
+            <a href="https://foundation.mozilla.org/es/"><h1 class="georgiaFont" style="color: white;">Register</h1></a>
         </div>
-        <p>or find out how to <strong>get more involved</strong></p>
+        <p>or find out how to <a style="color: rgb(5, 5, 173)" href="https://foundation.mozilla.org/es/">get more involved</a href=""></p>
     </div>
-    <div id="learnHow" class="asideWidth ma">
+    <div id="learnHow" class="asideWidth">
         <div id="p2pu" class="asideLearnHowInline">
             <img src="../img/benefit_p2pu.png">
             <p>Learn how to organize a <strong>Peer 2 Peer University</strong> course.</p>
@@ -103,12 +103,13 @@
             <p>Integrate <strong>Wikipedia</strong> into your learning project.</p>
         </div>
     </div>
+    <div id="linea"></div>
     <!--SEGUNDO PÁRRAFO (ABOUT), TERCER PÁRRAFO (SCHEDULE)-->
-    <div id="about" class="ma">
-        <header>
-            <h3>What's it all about?</h3>
+    <div id="about">
+        <header class="padL">
+            <h3 class="microsoftSans">What's it all about?</h3>
         </header>
-        <section>
+        <section class="padL">
             <article class="textMiddleContent">The open nature of the internet is revolutionizing how we learn.
                 Mozilla's 2010 Drumbeat Festival will gather teachers, learners and technologists from around the world
                 who are at the heart of this revolution. Join us in Barcelona for three days of making, teaching,
@@ -116,9 +117,9 @@
                     href="https://foundation.mozilla.org/es/">learn more.</a></article>
         </section>
     </div>
-    <div id="schedule" class="ma">
+    <div id="schedule">
         <header>
-            <h3>Schedule</h3>
+            <h3 class="microsoftSans">Schedule</h3>
         </header>
         <section>
             <article class="textMiddleContent">Want to know exactly what's going to happen? You can see the <a
@@ -131,12 +132,12 @@
     </div>
 
     <!--CAJAS (DEL DIV DE CAJAS: HEADER, SECTION Y FOOTER)-->
-    <div id="spaces" class="ma">
-        <header>
-            <h1>Festival Spaces</h1>
+    <div id="spaces">
+        <header class="padL">
+            <h3 class="microsoftSans">Festival Spaces</h3>
         </header>
-        <section>
-            <article>
+        <section class="padL">
+            <article style="font-size: 18px;">
                 <strong>Here's some of the different spaces we're planning for the Drumbeat Festival.</strong>
             </article>
             <article>
@@ -144,73 +145,72 @@
             </article>
         </section>
         <!--CAJAS-->
-        <div id="boxes" class="ma">
-
-            <div id="box1" class="box boxMargin ma">
-                <h3>Badge lab</h3>
+        <div id="boxes">
+            <div id="box1" class="box boxMargin pinkBox">
+                <h3 class="boxPad">Badge lab</h3>
                 <p>Test, critique and improve badges and tools that recognize informal online learning. Hosted by
-                    <a>P2PU</a>, <a>Mozilla</a> and <a>Remix Learning</a>.
+                    <a href="https://foundation.mozilla.org/es/">P2PU</a>, <a href="https://foundation.mozilla.org/es/">Mozilla</a> and <a href="https://foundation.mozilla.org/es/">Remix Learning</a>.
                 </p>
             </div>
-            <div id="box2" class="box boxMargin ma">
-                <h3>Webcraft toolshed</h3>
+            <div id="box2" class="box boxMargin greenBox">
+                <h3 class="boxPad">Webcraft toolshed</h3>
                 <p>Get your hands dirty testing and improving standards-based web developer courses. Hosted by
-                    <a>Mozilla</a>, <a>P2PU</a> and <a>W3C WASP</a>.
+                    <a href="https://foundation.mozilla.org/es/">Mozilla</a>, <a href="https://foundation.mozilla.org/es/">P2PU</a> and <a href="https://foundation.mozilla.org/es/">W3C WASP</a>.
                 </p>
             </div>
-            <div id="box3" class="box ma">
-                <h3>Peer-learning fishbowl</h3>
-                <p>Provide feedback on peer-to-peer courses under development and chart new courses. Hosted by <a>Peer 2
+            <div id="box3" class="box boxMargin yellowBox">
+                <h3 class="boxPad">Peer-learning fishbowl</h3>
+                <p>Provide feedback on <br> peer-to-peer courses under development and chart new courses. Hosted by <a href="https://foundation.mozilla.org/es/">Peer 2
                         Peer University</a>.</p>
             </div>
 
-            <div id="box4" class="box boxMargin ma">
-                <h3>Local learning incubator</h3>
-                <p>Help librarians and community organizers produce new open web learning content. Hosted by <a>You
+            <div id="box4" class="box boxMargin blueBox">
+                <h3 class="boxPad">Local learning incubator</h3>
+                <p>Help librarians and community organizers produce new open web learning content. Hosted by <a href="https://foundation.mozilla.org/es/">You
                         Media Chicago</a>.</p>
             </div>
-            <div id="box5" class="box boxMargin ma">
-                <h3>Open content studio</h3>
-                <p>Hack on open textbooks and help build a global courseware catalog. Hosted by <a>Flat World
-                        Knowledge</a>, <a>OCW Consortium</a>, <a>Creative Commons</a> and <a>Connexions</a>.</p>
+            <div id="box5" class="box boxMargin pinkBox">
+                <h3 class="boxPad">Open content studio</h3>
+                <p>Hack on open textbooks and <br> help build a global courseware catalog. Hosted by <a href="https://foundation.mozilla.org/es/">Flat World
+                        Knowledge</a>, <a href="https://foundation.mozilla.org/es/">OCW Consortium</a>, <a href="https://foundation.mozilla.org/es/">Creative Commons</a> and <a href="https://foundation.mozilla.org/es/">Connexions</a>.</p>
             </div>
-            <div id="box6" class="box ma">
-                <h3>Hackerspace playground</h3>
+            <div id="box6" class="box boxMargin greenBox">
+                <h3 class="boxPad">Hackerspace playground</h3>
                 <p>Learn how to make teach with processing.js, Arduino, a MakerBot and other cool toys. Hosted by
-                    <a>Monochrom</a> and <a>Arduino.cc</a>.
+                    <a href="https://foundation.mozilla.org/es/">Monochrom</a> and <a href="https://foundation.mozilla.org/es/">Arduino.cc</a>.
                 </p>
             </div>
-            <div id="box7" class="box boxMargin ma">
-                <h3>Wikipedia lounge</h3>
+            <div id="box7" class="box boxMargin yellowBox">
+                <h3 class="boxPad">Wikipedia lounge</h3>
                 <p>Pitch in on projects that fuse Wikipedia into the world of learning and education. Hosted by
-                    <a>Wikimedia Foundation</a> and <a>Wikimedia in Catalan</a>.
+                    <a href="https://foundation.mozilla.org/es/">Wikimedia Foundation</a> and <a href="https://foundation.mozilla.org/es/">Wikimedia in Catalan</a>.
                 </p>
             </div>
-            <div id="box8" class="box boxMargin ma">
-                <h3>Open source classroom</h3>
-                <p>Convert open source projects into teaching resource in your classroom. Hosted by: <a>Free Knowledge
-                        Institute</a> and <a>Seneca College</a>.</p>
+            <div id="box8" class="box boxMargin blueBox">
+                <h3 class="boxPad">Open source classroom</h3>
+                <p>Convert open source projects into teaching resource in your classroom. Hosted by: <a href="https://foundation.mozilla.org/es/">Free Knowledge
+                        Institute</a> and <a href="https://foundation.mozilla.org/es/">Seneca College</a>.</p>
             </div>
-            <div id="box9" class="box ma">
-                <h3>Video + learning gallery</h3>
-                <p>Make, translate and share online videos with a vent for learning. Hosted by: <a>Open Video
-                        Alliance</a>, <a>Mozilla</a> and <a>Participatory Culture Foundation</a>.</p>
+            <div id="box9" class="box boxMargin pinkBox">
+                <h3 class="boxPad">Video + learning gallery</h3>
+                <p>Make, translate and share online videos with a vent for learning. Hosted by: <a href="https://foundation.mozilla.org/es/">Open Video
+                        Alliance</a>, <a href="https://foundation.mozilla.org/es/">Mozilla</a> and <a href="https://foundation.mozilla.org/es/">Participatory Culture Foundation</a>.</p>
             </div>
-            <div id="box10" class="box ma">
-                <h3>Main stage</h3>
-                <p>Demos and report-backs from across the Drumbeat Festival as well as a samll number of mind-bending
-                    keynotes. Hosted by <a>Mozilla</a>.</p>
+            <div id="box10" class="box boxMargin greenBox">
+                <h3 class="boxPad">Main stage</h3>
+                <p>Demos and report-backs from across the Drumbeat Festival as well as a samll number of <br> mind-bending
+                    keynotes. Hosted by <a href="https://foundation.mozilla.org/es/">Mozilla</a>.</p>
             </div>
         </div>
-        <footer class="ma">
+        <footer class="padL">
             <p>You'll find a full list of activities confirmed and proposed for Drumbeat Festival spaces on the
                 </br><a href="https://foundation.mozilla.org/es/">activities wiki page.</a></p>
-            <h1 id="partnership">In Partnership With</h1>
+            <h1 id="partnership" class="microsoftSans">In Partnership With</h1>
         </footer>
     </div>
-    <div id="whoShould" class="asideWidth ma">
-        <h1>Who should come?</h1>
-        <ul>
+    <div id="whoShould" class="asideWidth shadow">
+        <h1 class="georgiaFont">Who should come?</h1>
+        <ul class="PTSans">
             <li>Open textbook authors and remixers</li>
             <li>People teaching development web</li>
             <li>Edupunks</li>
@@ -222,23 +222,23 @@
             <li><strong>And, of course, teachers and learners of all stripes</strong></li>
         </ul>
         <p>
-            We're extending a <strong>special invite and reduced fees to people attending <a>OpenEd2010</a></strong>
+            We're extending a <strong>special invite and reduced fees to people attending <a href="https://foundation.mozilla.org/es/">OpenEd2010</a></strong>
             which takes place in Barcelona on the two days before the Drumbeat Festival. We'll announce details in the
             coming weeks.
         </p>
     </div>
-    <div id="rssAside" class="asideWidth ma">
+    <div id="rssAside" class="asideWidth">
         <div id="indeticaRSS">
             <img src="../img/identica.png">
-            <p>Share on Indenti.ca</p>
+            <a href="https://foundation.mozilla.org/es/">Share on Indenti.ca</a>
         </div>
         <div id="twitterRSS">
             <img src="../img/twitter.png">
-            <p>Tweet this</p>
+            <a href="https://foundation.mozilla.org/es/">Tweet this</a>
         </div>
     </div>
     <!--FOOTER CON LISTA Y ENLACES-->
-    <footer id="mainFooter" class="ma">
+    <footer id="mainFooter">
         <div id="footerFirst">
             <ul style="list-style-image: url(../img/icono/rss.jpg);">
                 <li><a href="https://foundation.mozilla.org/es/">Drumbeat Blog</a></li>
