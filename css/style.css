@@ -133,6 +133,7 @@ a{
     font-family: KarminaSansW01-Light;
 }
 
+
 #enLAN{
     background-color: rgba(136, 136, 136, 0.87);
     padding: 3px 10px 3px 10px;
@@ -272,7 +273,17 @@ a{
     flex-wrap: wrap;
 }
 
-.boxPad{padding-bottom: 15px}
+#boxes div{
+    padding-right: 6px;
+}
+
+.boxPad{
+    padding-bottom: 15px;
+}
+
+.boxSize{
+    width: 290px;
+}
 
 #box1{
     transform: rotate(-3deg);
