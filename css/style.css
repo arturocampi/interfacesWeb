@@ -91,9 +91,9 @@ a{
 #subtitle{
     clear: both;
     width: auto;
-    
     padding: 10px 5px 25px 15px;
     color: #00717b;
+    font-size: 22px;
 }
 
 #secondNav{
@@ -161,19 +161,19 @@ a{
     float:left;
 }
 
-#programSection>header>h1{
+#programSection>h1{
     color: #47b8bc;
     padding: 25px 0px 15px 15px;
 }
 
-#programSection>section{
+#section{
     padding-left: 15px;
     padding-bottom: 20px;
     width: 690px;
     vertical-align: top;
 }
 
-#programSection>section>article{
+#section>article{
     margin-bottom: 20px;
     font-size: large;
     font-family: 'Times New Roman';
@@ -183,7 +183,7 @@ a{
     margin-left: 15px;
 }
 
-#programSection>img,#programSection>section{
+#programSection>img,#section{
     display: inline-block;
 }
 
@@ -215,16 +215,16 @@ a{
     padding-top: 20px;
 }
 
-#spaces>section{
+#sectionSpaces{
     padding-top: 10px;
     padding-bottom: 35px;
 }
 
 #spaces>footer{
-    padding: 45px 0px 35px 35px;
+    padding: 0px 0px 35px 20px;
 }
 
-#spaces>footer>p>a{
+#spaces>footer>a{
     color:rgb(38, 129, 120);
 }
 
@@ -237,7 +237,7 @@ a{
     font-size: 38px;
 }
 
-.box{
+.boxSize{
     width: 290px;
     height: 230px;
 }
@@ -263,6 +263,8 @@ a{
     background-color: #99dbe9;
 }
 
+.boxPad{padding-bottom: 15px}
+
 #boxes div h3{
     font-family: PTSans;
 }
@@ -270,9 +272,8 @@ a{
 #boxes{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 20px;
 }
-
-.boxPad{padding-bottom: 15px}
 
 #box1{
     transform: rotate(-3deg);
