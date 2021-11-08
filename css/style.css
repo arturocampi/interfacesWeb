@@ -166,6 +166,7 @@ a {
 #enLAN {
   background-color: rgba(136, 136, 136, 0.87);
   padding: 3px 10px 3px 10px;
+  margin-right: -5px;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
   border: solid rgba(148, 145, 145, 0.507) 0.5px;
@@ -182,6 +183,7 @@ a {
 #esLAN {
   background-color: rgba(235, 235, 235, 0.87);
   padding: 3px 10px 3px 10px;
+  margin-left: -5px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   border: solid rgba(148, 145, 145, 0.507) 0.5px;
