@@ -1,21 +1,16 @@
-#title_logo {
-  width: 15%;
-  /* float: left; */
-}
-
-#lista {
-  height: 15px;
-  /* float: right; */
-}
-
-#lista > li {
-  display: inline;
-  margin-right: 15px;
-}
-
 .grid-container {
   /* display: inline-block; */
   display: flex;
   flex-direction:row ;
   align-items: center;
+}
+
+#title_logo {
+  width: 15%;
+} 
+
+#lista > li {
+  display: inline;
+  margin-right: 15px;
+  text-align:right;
 }
