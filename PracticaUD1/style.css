@@ -1,0 +1,303 @@
+*{
+   /*border: 1px solid red;*/
+    font-family: Verdana;
+    padding:5px;
+}
+
+@font-face {
+    font-family: ballpark;
+    src: url(fonts/ballpark.ttf);
+}
+
+@font-face {
+    font-family: dayrom;
+    src: url(fonts/dayrom.ttf);
+}
+
+#logo{
+    padding: 0px;
+    margin: 0px;
+}
+
+#title_logo{
+    padding: 0px;
+    margin: 0px;
+    font-family: ballpark;
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+#agrupar{
+    background-color:#fef5d8;
+    width: 950px;
+    border-style: solid;
+    border-width: 1.5px;
+    margin: 15px auto;
+}
+
+#bridge_img>img{
+    position: relative;
+    width: 935px; 
+    height: auto;
+    padding: 0px;
+    box-shadow: -0.5px 5px 5px ;
+    border-radius: 5px;
+}
+
+#desc{
+    position: absolute;
+    font-family: sans-serif;
+    border-radius: 5px;
+    color: white;
+    border: 5px;
+    background-color: black;
+    width: 915px;
+    height: 15px;
+    padding: 15px;
+    padding-left: 5px;
+    margin: 0px;
+    margin-top:10px;
+    opacity: 0.8;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    top: 331px;
+    font-size: 13px;
+}
+
+#caja_roja{
+    opacity: 0.8;
+    top: 350px;
+    right: 510px;
+    position: absolute;
+    color: white;
+    margin:0px;
+    padding: 0px;
+    width: 95px;
+}
+
+#caja_roja>img{
+    padding: 0px;
+    position: absolute;
+    top: 11px;
+    right: 0px;
+}
+
+#caja_roja>p{
+    margin: 0px;
+    width: 95px;
+    font-size: 14px;
+    border: 2px solid rgb(163, 2, 2);
+    background-color: rgb(163, 2, 2);
+    border-radius: 3px;
+}
+
+#travel_diaries, nav{
+    display: inline-block;
+    padding:0px;
+    margin:0px;
+}
+
+#travel_diaries{
+    font-family: dayrom;
+    font-size: large;
+}
+
+#top_line{
+    vertical-align: middle;
+}
+
+nav{
+    font-family: dayrom;  
+    float: right;
+}
+
+nav>ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav>ul>li{
+    display: inline;
+    font-family: dayrom; 
+    font-size: large;
+    padding: 8px;
+}
+
+nav>ul>li:hover{
+    color: red;
+    border-bottom: 2px solid red;
+    cursor: pointer;
+}
+
+section{
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 0px;
+}
+
+section>article{
+    width: 70%;
+    padding: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+section>article>p{
+    padding:0px;
+    text-align: justify;
+    font-size: smaller;
+    font-size: 12px;
+}
+
+h1{
+    padding: 0px;
+    font-family: dayrom;
+    font-weight: lighter;
+}
+
+#article_img{
+    vertical-align: middle;
+}
+
+.center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 2px solid black;
+    padding:0px;
+}
+
+aside>h3{
+    font-family: dayrom;
+    font-weight: lighter;
+}
+
+section>aside{
+    vertical-align: top;
+    background-color: #706b65;
+    color: white;
+    width: 25%;
+    height: 100%;
+    text-align: justify;
+    font-size: small;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 12px;
+    padding-bottom: 30px;
+}
+
+#redes{
+    padding: 0px;
+    margin:0px;
+    display:inline-block;
+    margin-left: 5px;
+}
+
+.small{
+    padding: 0px;
+    margin:0px;
+    
+}
+
+article, aside{
+    display: inline-block;
+}
+
+footer{
+    width: 100%;
+    display: block;
+    padding: 0px;
+}
+
+footer h1{
+    font-family: dayrom;
+    font-weight: lighter;
+    font-size: large;
+}
+
+
+#tweet, #picture, #friend{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px;
+}
+
+#tweet{
+    width: 23%;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+#tweet p{
+    padding: 0px;
+    margin-top:10px;
+    font-size: small;
+}
+
+#picture{
+    width: 34%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#picture p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.small_pictures{
+    border: 2px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+
+#friend{
+    width: 37%;
+    padding: 0px;
+    margin-left: 18px;
+}
+
+#friend>h1{
+    margin-left: 20px;
+}
+
+#friend>ul>li{
+    padding: 0px;
+    color: rgb(104, 1, 1);
+    list-style-image: url('images/external_link.png');
+    list-style-position: inside;
+    margin-left: 15px;
+}
+
+#friend>ul{
+    margin-top:0px;
+    padding: 0px;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px;
+}
+
+#bottom_img {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+#bottom_line{
+    vertical-align: top;
+    padding: 0px;
+    margin: 0px;
+}
+
+#footer_arrow{
+    vertical-align: middle;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 0px;  
+    left:440px;  
+}
