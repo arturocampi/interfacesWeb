@@ -51,7 +51,8 @@ body {
 }
 
 #mainIMG {
-  max-width: 100%;
+  /* max-width: 100%; */
+  width: 100vw;
 }
 
 #section {
@@ -158,15 +159,41 @@ body {
   background: rgb(255, 0, 0, 0.9);
 }
 
+#aside{
+  position: relative;
+  text-align: center;
+}
+
 #aside img{
   width: 100%;
 }
 
-#asideText {
-  background-color: rgba(73, 73, 73, 0.5);
-  width: 350px;
-  text-align: right;
-  position: relative;
-  margin-top: -66.9%;
-  height:min-content;
+#aside div {
+  background-color: rgba(73, 73, 73, 0.8);
+  padding: 10px;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Oswald", sans-serif;
+  color: whitesmoke;
+}
+
+
+#aside div ul li{
+  list-style-image: url(../img/list_arrow.png);
+  text-align: left;
+  font-size: 150%;
+}
+
+#dondeestamos{
+  margin: 0px;
+  padding: 30px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 160%;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  background: rgba(255, 230, 0, 0.9);
 }
