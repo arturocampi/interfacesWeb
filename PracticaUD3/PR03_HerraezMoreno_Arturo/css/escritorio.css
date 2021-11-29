@@ -146,6 +146,7 @@ body {
 
 .galeria img {
   max-width: 100%;
+  border: 1px solid whitesmoke ;
 }
 
 #sobrenosotros {
@@ -156,7 +157,7 @@ body {
   font-size: 160%;
   color: whitesmoke;
   border: 1px solid whitesmoke;
-  background: rgb(255, 0, 0, 0.9);
+  background: rgba(208, 255, 0, 0.9);
 }
 
 #aside{
@@ -195,5 +196,5 @@ body {
   font-size: 160%;
   color: whitesmoke;
   border: 1px solid whitesmoke;
-  background: rgba(255, 230, 0, 0.9);
+  background: rgba(255, 123, 0, 0.9);
 }
