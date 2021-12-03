@@ -10,6 +10,16 @@ body {
   padding: 0px;
 }
 
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:link{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 #header {
   background-color: rgba(63, 63, 63, 0.548);
   position: fixed;
@@ -51,8 +61,8 @@ body {
 }
 
 #mainIMG {
-  /* max-width: 100%; */
-  width: 100vw;
+  max-width: 100%;
+  /* width: 100vw; */
 }
 
 #section {
@@ -146,11 +156,11 @@ body {
 
 .galeria img {
   max-width: 100%;
-  border: 1px solid whitesmoke ;
+  border: 1px solid whitesmoke;
 }
 
 #sobrenosotros {
-  margin: 0px;
+  margin: 0px 0px 5px 0px;
   padding: 30px;
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -160,12 +170,12 @@ body {
   background: rgba(208, 255, 0, 0.9);
 }
 
-#aside{
+#aside {
   position: relative;
   text-align: center;
 }
 
-#aside img{
+#aside img {
   width: 100%;
 }
 
@@ -181,15 +191,14 @@ body {
   color: whitesmoke;
 }
 
-
-#aside div ul li{
+#aside div ul li {
   list-style-image: url(../img/list_arrow.png);
   text-align: left;
   font-size: 150%;
 }
 
-#dondeestamos{
-  margin: 0px;
+#dondeestamos {
+  margin: 0px 0px 5px 0px;
   padding: 30px;
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -197,4 +206,10 @@ body {
   color: whitesmoke;
   border: 1px solid whitesmoke;
   background: rgba(255, 123, 0, 0.9);
+}
+
+#map {
+  width: 100%;
+  height: 600px;
+  border: 0;
 }

@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#header {
+  background-color: rgba(63, 63, 63, 0.548);
+  position: fixed;
+  padding: 5px;
+}
+
+#title_logo {
+  margin-left: 15px;
+  width: 10%;
+  float: left;
+}
+
+#lista {
+  float: right;
+  margin: 0.2%;
+}
+
+#lista > li {
+  display: inline;
+  margin-right: 35px;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: whitesmoke;
+}
+
+#lista > li > a {
+  font-size: 1em;
+  margin: 0;
+  text-align: center;
+  -webkit-transition: font-size 0.5s ease;
+  -moz-transition: font-size 0.5s ease;
+  -o-transition: font-size 0.5s ease;
+  transition: font-size 0.5s ease;
+}
+
+#lista > li > a:hover {
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+}
+
+#mainIMG {
+  max-width: 100%;
+  /* width: 100vw; */
+}
+
+#section {
+  margin: 1px auto;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2em;
+  width: 800px;
+}
+
+#section > h1 {
+  color: green;
+}
+
+#section > h2 {
+  color: greenyellow;
+}
