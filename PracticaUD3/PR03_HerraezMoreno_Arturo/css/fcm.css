@@ -2,28 +2,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
-* {
+/* margin y padding a 0 para que no tener espacios imprevistos */
+body {
   margin: 0px;
   padding: 0px;
-}
-
-a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-a:link {
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-body{
   background-image: url(../img/heartRate.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 }
 
+/* muestra los links en blanco */
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* despues de hacer click en el link se mantiene en blanco */
+a:link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* nav */
 #nav {
   background-color: rgba(63, 63, 63, 0.548);
   position: fixed;
@@ -31,17 +32,20 @@ body{
   padding: 5px;
 }
 
+/* logo del nav */
 #title_logo {
   margin-left: 15px;
   width: 10%;
   float: left;
 }
 
+/* lista a la derecha */
 #lista {
   float: right;
   margin: 0.2%;
 }
 
+/* lista en linea */
 #lista > li {
   display: inline;
   margin-right: 35px;
@@ -50,6 +54,7 @@ body{
   color: whitesmoke;
 }
 
+/* efecto de la lista a negro y tamaño fuente grande */
 #lista > li > a {
   font-size: 1em;
   margin: 0;
@@ -60,16 +65,13 @@ body{
   transition: font-size 0.5s ease;
 }
 
+/* efecto de la lista a negro y tamaño fuente grande */
 #lista > li > a:hover {
   font-size: 1.5em;
   color: rgb(0, 0, 0);
 }
 
-#mainIMG {
-  max-width: 100%;
-  /* width: 100vw; */
-}
-
+/* clase texto con el estilo para las el js en html */
 .text {
   width: 750px;
   margin: 100px auto;
@@ -78,39 +80,48 @@ body{
   font-size: 2em;
 }
 
+/* estilo de la caja del js en html */
+#script {
+  background: rgba(151, 151, 151, 0.527);
+  border-radius: 6px;
+}
+
+/* estilo del titulo del js en html */
 #script > h1 {
   color: rgb(255, 255, 255);
   font-size: 2.8em;
 }
 
-#script{
-  background:rgba(151, 151, 151, 0.527);
-  border-radius: 6px;
-}
-
-#result{
+/* estilo de la lista de la respuesta de js */
+#result {
   list-style-type: none;
 }
 
-#enviar{
+/* estilo del boton de calcular */
+#enviar {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1em;
 }
 
-#answer{
+/* estilo de la respuesta de js */
+#answer {
   color: whitesmoke;
   margin: 25px 0px 25px 0px;
 }
 
-#listAnswer{
-    list-style-type: none;
+/* estilo de la lista de la respuesta de js */
+#listAnswer {
+  list-style-type: none;
 }
 
+/* mediaprint para los dispositivos más pequeños que 700px y más grandes que 1000px */
 @media (min-width: 700px) and (max-width: 1000px) {
-  *{
+  /* tamaño de la letra en toda la pagina */
+  body {
     font-size: 92%;
   }
 
+  /* lista en linea */
   #lista > li {
     display: inline;
     margin-right: 35px;
@@ -120,11 +131,14 @@ body{
   }
 }
 
+/* mediaprint para los dispositivos más pequeños que 700px */
 @media (max-width: 699px) {
-  *{
+  /* tamaño de la letra en toda la pagina */
+  body {
     font-size: 85%;
   }
 
+  /* lista en linea */
   #lista > li {
     display: inline;
     margin-right: 35px;

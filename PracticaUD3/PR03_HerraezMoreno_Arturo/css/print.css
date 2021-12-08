@@ -1,0 +1,156 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* todo el texto es negro, fuente verdana*/
+* {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*muestra el link de todos los enlaces*/
+a:after {
+  content: " (" attr(href) ")";
+}
+
+/* block para tener su propia linea/espacio en el dom */
+#title_logo {
+  display: block;
+  width: 30%;
+  margin-bottom: 50px;
+}
+
+/* margin de la lista del nav */
+#lista {
+  margin: 0.2%;
+}
+
+/* estilo de la lista del nav */
+#lista > li {
+  margin-right: 35px;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+/* estilo de los links de la lista del nav */
+#lista > li > a:hover {
+  font-size: 1.5em;
+}
+
+/* no muestra nada */
+#mainIMG {
+  display: none;
+}
+
+/* estilo del texto debajo de la imagen principal */
+#section {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+}
+
+/* hace un salto de página */
+#inspirate {
+  page-break-before: always;
+  width: 100%;
+  margin: 0px auto;
+  font-size: 200%;
+  text-align: center;
+}
+
+/* estilo del texto de inspirate */
+#inspirate > h1 {
+  margin: 4% 0px 4% 0px;
+}
+
+/* muestra las citas en 3 columnas y 2 filas */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+/* estilo del texto de las citas */
+.grid p {
+  margin: 0px;
+  padding: 60px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 80%;
+}
+
+/* no muestra nada */
+#nuestrasinstalaciones {
+  display: none;
+}
+
+/* no muestra nada */
+.galeria {
+  display: none;
+}
+
+/* hace un salto de página */
+#sobrenosotros {
+  page-break-before: always;
+  margin: 0px 0px 5px 0px;
+  padding: 30px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 160%;
+}
+
+/* no muestra nada */
+#aside img {
+  display: none;
+}
+
+/* block para tener su propia linea/espacio en el dom */
+#aside div {
+  display: block;
+  padding: 10px;
+  margin: auto;
+  font-family: "Oswald", sans-serif;
+}
+
+/* estilo de la lista del aside */
+.asideList li {
+  text-align: left;
+  font-size: 1.3em;
+}
+
+/* no muestra nada */
+#dondeestamos {
+  display: none;
+}
+
+/* no muestra nada */
+#map {
+  display: none;
+}
+
+/* hace un salto de página */
+/* block para tener su propia linea/espacio en el dom */
+#mainFooter {
+  page-break-before: always;
+  display: block;
+}
+
+/* block para tener su propia linea/espacio en el dom */
+#list {
+  display: block;
+  font-size: 1em;
+  font-family: "Oswald", sans-serif;
+}
+
+/* block para tener su propia linea/espacio en el dom */
+#list ul {
+  display: block;
+}
+
+/* block para tener su propia linea/espacio en el dom */
+#copy {
+  display: block;
+  font-size: 1.5em;
+  font-family: "Oswald", sans-serif;
+}
