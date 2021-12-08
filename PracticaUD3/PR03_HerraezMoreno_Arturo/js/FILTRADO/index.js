@@ -63,6 +63,7 @@ function checkSesiones() {
     if (!state) {
         alert('Por favor selecciona una sesión mínimo');
     }
+    resetSesiones();
 }
 
 //ESTA FUNCIÓN MARCA CON UN COLOR LAS ACTIVIDADES QUE ESTÁN SELECCIONADAS
@@ -81,10 +82,12 @@ function markSesiones(sesion) {
 //ESTA FUNCIÓN ELIMINA LAS ACTIVIDADES QUE YA NO ESTÁN SELECCIONADAS
 function resetSesiones() {
     var tabla2 = document.getElementById('tablaSesiones');
-    var filas2 = tabla2.getElementsByTagName('td');
-    for (let i = 1; i <= 6; i++) {
-        for (let j = 1; j <= filas2.length - 1; j++) {
-            filas2[j].style.backgroundColor = 'rgb(29, 30, 31)';
+    var filas2 = tabla2.getElementsByTagName('tr');
+    for (let j = 1; j <= filas2.length; j++) {
+        if (j % 2 == 0) {
+            filas2[j].style.backgroundColor = 'rgb(219, 218, 218);';
+        } else {
+            filas2[j].style.backgroundColor = 'rgb(148, 148, 148);';
         }
     }
 }
@@ -137,13 +140,16 @@ function markFisio(fisio) {
     }
 }
 
-//ESTA FUNCIÓN ELIMINA EL/LA FISIOTERAPEUTA QUE YA NO ESTÁ SELECCIONAD@
 function resetFisios() {
     var table2 = document.getElementById('tablaFisios');
-    var row2 = table2.getElementsByTagName('td');
-    for (let i = 1; i <= 6; i++) {
-        for (let j = 1; j <= row2.length - 1; j++) {
-            row2[j].style.backgroundColor = 'rgb(29, 30, 31)';
+    var filas2 = table2.getElementsByTagName('tr');
+    for (let i = 0; i < 6; i++) {
+        for (let j = 1; j <= filas2.length; j++) {
+            if (j % 2 == 0) {
+                filas2[j].style.backgroundColor = 'rgb(219, 218, 218);';
+            } else {
+                filas2[j].style.backgroundColor = 'rgb(148, 148, 148);';
+            }
         }
     }
 }

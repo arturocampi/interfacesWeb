@@ -52,13 +52,13 @@ function calcular(peso, altura) {
     }
     // IMPRIMOS EL RESULTADO POR PANTALLA
     var calculo = document.getElementById("answer");
-    calculo.textContent = `Tu IMC es de: ${num}`;
+    calculo.textContent = `TU IMC ES DE: ${num}`;
 }
 
 function reset() {
     // LA FUNCION RESET, PONE EL COLOR DE LOS RESULTADOS POR DEFECTO PARA MOSTRAR EL NUEVO RESULTADO
     var list = document.getElementsByClassName('list');
     for (let i = 0; i < list.length; i++) {
-        list[i].style.color = 'whitesmoke';
+        list[i].style.color = 'black';
     }
 }

@@ -2,43 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fcm</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-
-        body {
-            font-family: PT Sans;
-            background-color: rgb(29, 30, 31);
-            color: whitesmoke;
-        }
-
-        li {
-            list-style-type: none
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fcm</title>
+  <script href="text/javascript" src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../css/fcm.css" />
 </head>
 
 <body>
-    <script src="fcm.js"></script>
-    <center>
-        <h3>Este es un programa que calculará tu IMC</h3>
-        <p>Introduce ahora los datos solicitados</p>
-        <form id="formulario" name="formulario">
-            <label>Edad (15años-65años)</label><input type="text" name="edad" id="edad"><br><br>
-            <label>Sexo (hombre-mujer)</label><input type="text" name="sexo" id="sexo"><br><br>
-            <input type="button" value="enviar" onclick="comprobar()">
-        </form>
-        <br>
-        <h3 id="answer"></h3>
-        <br>
-        <li id="1"></li>
-        <li id="2"></li>
-        <li id="3"></li>
-        <li id="4"></li>
-    </center>
+  <div id="nav">
+    <a href="../../index.html"><img id="title_logo" src="../../img/ico.png" alt="logo" /></a>
+    <ul id="lista">
+      <li><a>LOGIN</a></li>
+      <li><a href="../IMC/index.html">CALCULADORA IMC</a></li>
+      <li><a href="../TABLAS/index.html">HORARIO GIMNASIO</a></li>
+      <li><a href="../FILTRADO/index.html">FILTRADO FISIO/ACTIVIDAD</a></li>
+    </ul>
+  </div>
+  <div id="script" class="text">
+    <h1>CALCULA TU FCM</h1>
+    <form id="formulario" name="formulario">
+      <label>EDAD [15-65 AÑOS]</label> <input type="text" name="edad" id="edad" /><br />
+      <label>SEXO [HOMBRE-MUJER]</label> <input type="text" name="sexo" id="sexo" /><br /><br />
+      <input type="button" value="CALCULAR" id="enviar" onclick="comprobar()" />
+    </form>
+    <h3 id="answer"></h3> 
+    <ul id="listAnswer">
+      <li id="1"></li>
+      <li id="2"></li>
+      <li id="3"></li>
+      <li id="4"></li>
+    </ul>
+    <br />
+  </div>
 </body>
 
 </html>

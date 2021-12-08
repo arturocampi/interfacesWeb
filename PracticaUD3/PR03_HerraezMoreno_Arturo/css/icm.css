@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -13,9 +17,17 @@ a:link {
   color: whitesmoke;
 }
 
-#header {
+body{
+  background-image: url(../img/bascula.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#nav {
   background-color: rgba(63, 63, 63, 0.548);
   position: fixed;
+  top: 0;
   padding: 5px;
 }
 
@@ -55,21 +67,63 @@ a:link {
 
 #mainIMG {
   max-width: 100%;
-  /* width: 100vw; */
 }
 
-#section {
-  margin: 1px auto;
+.text {
+  width: 750px;
+  margin: 100px auto;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 2em;
-  width: 800px;
 }
 
-#section > h1 {
-  color: green;
+#script > h1 {
+  color: rgb(255, 255, 255);
+  font-size: 2.8em;
 }
 
-#section > h2 {
-  color: greenyellow;
+#script{
+  background:rgba(151, 151, 151, 0.63);
+  border-radius: 6px;
+}
+
+#result{
+  list-style-type: none;
+}
+
+#enviar{
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1em;
+}
+
+#answer{
+  color: rgb(0, 255, 0);
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  *{
+    font-size: 92%;
+  }
+
+  #lista > li {
+    display: inline;
+    margin-right: 35px;
+    font-size: 15px;
+    font-family: "Oswald", sans-serif;
+    color: whitesmoke;
+  }
+}
+
+@media (max-width: 699px) {
+  *{
+    font-size: 85%;
+  }
+
+  #lista > li {
+    display: inline;
+    margin-right: 35px;
+    font-size: 15px;
+    font-family: "Oswald", sans-serif;
+    color: whitesmoke;
+  }
 }
