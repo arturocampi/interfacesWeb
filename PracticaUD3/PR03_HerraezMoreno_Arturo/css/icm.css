@@ -9,7 +9,7 @@ body {
   background-image: url(../img/bascula.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* muestra los links en blanco */
