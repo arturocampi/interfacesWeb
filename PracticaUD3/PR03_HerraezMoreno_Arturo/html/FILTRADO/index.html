@@ -1,145 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="es">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>horarios</title>
     <script src="../../js/FILTRADO/index.js"></script>
+    <link rel="icon" href="../../img/favicon.ico" type="image/png" />
     <link rel="stylesheet" type="text/css" href="../../css/filtrado.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="nav">
-        <a href="../../index.html"><img id="title_logo" src="../../img/ico.png" alt="logo" /></a>
-        <ul id="lista">
-            <li><a>LOGIN</a></li>
-            <li><a href="../IMC/index.html">CALCULADORA IMC</a></li>
-            <li><a href="../FCM/index.html">CALCULADORA FCM</a></li>
-            <li><a href="../TABLAS/index.html">HORARIO GIMNASIO</a></li>
-        </ul>
+      <a href="../../index.html"
+        ><img id="title_logo" src="../../img/ico.png" alt="logo"
+      /></a>
+      <ul id="lista">
+        <li><a href="index.html">LOGIN</a></li>
+        <li><a href="../IMC/index.html">CALCULADORA IMC</a></li>
+        <li><a href="../FCM/index.html">CALCULADORA FCM</a></li>
+        <li><a href="../TABLAS/index.html">HORARIO GIMNASIO</a></li>
+      </ul>
     </div>
     <div id="script">
-        <h1>TABLA DE SESIONES</h1>
-        <table id="tablaSesiones" class="table">
-            <tr>
-                <th>ACTIVIDADES</th>
-                <th>LUNES</th>
-                <th>MARTES</th>
-                <th>MIÉRCOLES</th>
-                <th>JUEVES</th>
-                <th>VIERNES</th>
-                <th>SÁBADO</th>
-            </tr>
-            <tr>
-                <td>07:00 - 09:00</td>
-            </tr>
-            <tr>
-                <td>09:00 - 11:00</td>
-            </tr>
-            <tr>
-                <td>11:00 - 13:00</td>
-            </tr>
-            <tr>
-                <td>13:00 - 15:00</td>
-            </tr>
-            <tr>
-                <td>15:00 - 17:00</td>
-            </tr>
-            <tr>
-                <td>17:00 - 19:00</td>
-            </tr>
-            <tr>
-                <td>19:00 - 21:00</td>
-            </tr>
-        </table>
-        <h1>TABLA DE FISIOS</h1>
-        <table id="tablaFisios" class="table">
-            <tr>
-                <th>FISIOS</th>
-                <th>LUNES</th>
-                <th>MARTES</th>
-                <th>MIÉRCOLES</th>
-                <th>JUEVES</th>
-                <th>VIERNES</th>
-            </tr>
-            <tr>
-                <td>10:00 - 10:45</td>
-            </tr>
-            <tr>
-                <td>10:45 - 11:30</td>
-            </tr>
-            <tr>
-                <td>11:30 - 12:15</td>
-            </tr>
-            <tr>
-                <td>12:15 - 13:00</td>
-            </tr>
-            <tr>
-                <td>13:00 - 13:45</td>
-            </tr>
-            <tr>
-                <td>17:00 - 17:45</td>
-            </tr>
-            <tr>
-                <td>17:45 - 18:30</td>
-            </tr>
-            <tr>
-                <td>18:30 - 19:15</td>
-            </tr>
-            <tr>
-                <td>19:15 - 20:00</td>
-            </tr>
-            <tr>
-                <td>20:00 - 20:45</td>
-            </tr>
-        </table>
-        <!-- CREAMOS UN FORMULARIO CON BOTONES DONDE PODEMOS SELECCIONAR LAS SESIONES QUE QUEREMOS RESALTAR -->
-        <form id="sesiones" name="sesiones" class="display reload forms">
-            <p class="selecciona">SELECCIONA LA SESIÓN</p>
-            <input type="checkbox" id="sesion1" name="sesion1" value="CARDIO" />
-            <label for="sesion1">CARDIO</label><br />
-            <input type="checkbox" id="sesion2" name="sesion2" value="SALSA" />
-            <label for="sesion2">SALSA</label><br />
-            <input type="checkbox" id="sesion3" name="sesion3" value="NATACION" />
-            <label for="sesion3">NATACION</label><br />
-            <input type="checkbox" id="sesion4" name="sesion4" value="ZUMBA" />
-            <label for="sesion4">ZUMBA</label><br />
-            <input type="checkbox" id="sesion5" name="sesion5" value="PILATES" />
-            <label for="sesion5">PILATES</label><br />
-            <input type="button" value="MARCAR SESIONES" class="boton" onclick="checkSesiones()" />
-        </form>
-        <!-- CREAMOS UN FORMULARIO CON BOTONES DONDE PODEMOS SELECCIONAR EL/LA FISIOTERAPEUTA QUE QUEREMOS RESALTAR -->
-        <form id="fisios" name="fisios" class="display reload forms">
-            <p class="selecciona">SELECCIONA A UN FISIOTERAPEUTA</p>
-            <input type="radio" id="fisio1" name="fisio" value="ELSA ESPADA" />
-            <label for="fisio1">ELSA ESPADA</label><br />
-            <input type="radio" id="fisio2" name="fisio" value="NAGORE CAMPO" />
-            <label for="fisio2">NAGORE CAMPO</label><br />
-            <input type="radio" id="fisio3" name="fisio" value="SERGIO CHAVEZ" />
-            <label for="fisio3">SERGIO CHAVEZ</label><br />
-            <input type="radio" id="fisio4" name="fisio" value="GIOVANNI SOUTO" />
-            <label for="fisio4">GIOVANNI SOUTO</label><br />
-            <input type="radio" id="fisio5" name="fisio" value="AHMED VILLALBA" />
-            <label for="fisio5">AHMED VILLALBA</label><br />
-            <input type="button" value="MARCAR FISIOTERAPEUTA" class="boton" onclick="checkFisios()" />
-        </form>
+      <h1>TABLA DE SESIONES</h1>
+      <table id="tablaSesiones" class="table">
+        <tr>
+          <th>ACTIVIDADES</th>
+          <th>LUNES</th>
+          <th>MARTES</th>
+          <th>MIÉRCOLES</th>
+          <th>JUEVES</th>
+          <th>VIERNES</th>
+          <th>SÁBADO</th>
+        </tr>
+        <tr>
+          <td>07:00 - 09:00</td>
+        </tr>
+        <tr>
+          <td>09:00 - 11:00</td>
+        </tr>
+        <tr>
+          <td>11:00 - 13:00</td>
+        </tr>
+        <tr>
+          <td>13:00 - 15:00</td>
+        </tr>
+        <tr>
+          <td>15:00 - 17:00</td>
+        </tr>
+        <tr>
+          <td>17:00 - 19:00</td>
+        </tr>
+        <tr>
+          <td>19:00 - 21:00</td>
+        </tr>
+      </table>
+      <h1>TABLA DE FISIOS</h1>
+      <table id="tablaFisios" class="table">
+        <tr>
+          <th>FISIOS</th>
+          <th>LUNES</th>
+          <th>MARTES</th>
+          <th>MIÉRCOLES</th>
+          <th>JUEVES</th>
+          <th>VIERNES</th>
+        </tr>
+        <tr>
+          <td>10:00 - 10:45</td>
+        </tr>
+        <tr>
+          <td>10:45 - 11:30</td>
+        </tr>
+        <tr>
+          <td>11:30 - 12:15</td>
+        </tr>
+        <tr>
+          <td>12:15 - 13:00</td>
+        </tr>
+        <tr>
+          <td>13:00 - 13:45</td>
+        </tr>
+        <tr>
+          <td>17:00 - 17:45</td>
+        </tr>
+        <tr>
+          <td>17:45 - 18:30</td>
+        </tr>
+        <tr>
+          <td>18:30 - 19:15</td>
+        </tr>
+        <tr>
+          <td>19:15 - 20:00</td>
+        </tr>
+        <tr>
+          <td>20:00 - 20:45</td>
+        </tr>
+      </table>
+      <!-- CREAMOS UN FORMULARIO CON BOTONES DONDE PODEMOS SELECCIONAR LAS SESIONES QUE QUEREMOS RESALTAR -->
+      <form id="sesiones" name="sesiones" class="display reload forms">
+        <p class="selecciona">SELECCIONA LA SESIÓN</p>
+        <input type="checkbox" id="sesion1" name="sesion1" value="CARDIO" />
+        <label for="sesion1">CARDIO</label><br />
+        <input type="checkbox" id="sesion2" name="sesion2" value="SALSA" />
+        <label for="sesion2">SALSA</label><br />
+        <input type="checkbox" id="sesion3" name="sesion3" value="NATACION" />
+        <label for="sesion3">NATACION</label><br />
+        <input type="checkbox" id="sesion4" name="sesion4" value="ZUMBA" />
+        <label for="sesion4">ZUMBA</label><br />
+        <input type="checkbox" id="sesion5" name="sesion5" value="PILATES" />
+        <label for="sesion5">PILATES</label><br />
+        <input
+          type="button"
+          value="MARCAR SESIONES"
+          class="boton"
+          onclick="checkSesiones()"
+        />
+      </form>
+      <!-- CREAMOS UN FORMULARIO CON BOTONES DONDE PODEMOS SELECCIONAR EL/LA FISIOTERAPEUTA QUE QUEREMOS RESALTAR -->
+      <form id="fisios" name="fisios" class="display reload forms">
+        <p class="selecciona">SELECCIONA A UN FISIOTERAPEUTA</p>
+        <input type="radio" id="fisio1" name="fisio" value="ELSA ESPADA" />
+        <label for="fisio1">ELSA ESPADA</label><br />
+        <input type="radio" id="fisio2" name="fisio" value="NAGORE CAMPO" />
+        <label for="fisio2">NAGORE CAMPO</label><br />
+        <input type="radio" id="fisio3" name="fisio" value="SERGIO CHAVEZ" />
+        <label for="fisio3">SERGIO CHAVEZ</label><br />
+        <input type="radio" id="fisio4" name="fisio" value="GIOVANNI SOUTO" />
+        <label for="fisio4">GIOVANNI SOUTO</label><br />
+        <input type="radio" id="fisio5" name="fisio" value="AHMED VILLALBA" />
+        <label for="fisio5">AHMED VILLALBA</label><br />
+        <input
+          type="button"
+          value="MARCAR FISIOTERAPEUTA"
+          class="boton"
+          onclick="checkFisios()"
+        />
+      </form>
     </div>
     <script>
-        // CREAMOS UN ARRAY DE ACTIVIDADES Y LUEGO LLAMAMOS A LA FUNCION PASANDOLE LA ARRAY COMO VARIABLE
-        var sesiones = ["CARDIO", "SALSA", "NATACION", "ZUMBA", "PILATES"];
-        generarActividades(sesiones);
-        // CREAMOS UN ARRAY DE FISIOTERAPEUTAS Y LUEGO LLAMAMOS A LA FUNCION PASANDOLE LA ARRAY COMO VARIABLE
-        var fisios = [
-            "ELSA ESPADA",
-            "NAGORE CAMPO",
-            "SERGIO CHAVEZ",
-            "GIOVANNI SOUTO",
-            "AHMED VILLALBA",
-        ];
-        generarFisioterapeutas(fisios);
+      // CREAMOS UN ARRAY DE ACTIVIDADES Y LUEGO LLAMAMOS A LA FUNCION PASANDOLE LA ARRAY COMO VARIABLE
+      var sesiones = ["CARDIO", "SALSA", "NATACION", "ZUMBA", "PILATES"];
+      generarActividades(sesiones);
+      // CREAMOS UN ARRAY DE FISIOTERAPEUTAS Y LUEGO LLAMAMOS A LA FUNCION PASANDOLE LA ARRAY COMO VARIABLE
+      var fisios = [
+        "ELSA ESPADA",
+        "NAGORE CAMPO",
+        "SERGIO CHAVEZ",
+        "GIOVANNI SOUTO",
+        "AHMED VILLALBA",
+      ];
+      generarFisioterapeutas(fisios);
     </script>
-</body>
-
+  </body>
 </html>
